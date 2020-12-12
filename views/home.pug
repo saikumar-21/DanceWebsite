@@ -1,0 +1,43 @@
+extend base.pug
+
+block scripts
+    script(src="../static/index.js")
+
+block style
+    style
+        include ../static/style.css
+
+block content
+    nav#navbar
+        ul#navul
+            li #[a( href = '/') Home]
+            li #[a( href = '/') Services]
+            li #[a( href = '/') Join Now]
+            li #[a( href = '/contact') Contact Us]
+    section#sec1
+        div WELCOME TO DANCE ACADEMY
+        div.small “Dance is the hidden language of the soul.”
+    section#sec2
+        h2 Our Programmes
+        div.card
+             div.card-box
+                div.card-img
+                    img(src="../static/grp.jpg", alt="Group")
+                    h3 Group
+        div.card
+             div.card-box
+                div.card-img
+                    img(src="../static/solo.jpg", alt="Solo")
+                    h3 Solo
+        div.card
+            div.card-box
+                div.card-img
+                    img(src="../static/duet.jpg", alt="Duet")
+                    h3 Duet
+    section#sec3
+        h3 Our Sponsors
+        div#sponsor
+            img(src="../static/1.jpg", alt="apple" class="spons")
+            img(src="../static/2.png", alt="skype" class="spons")
+            img(src="../static/3.png", alt="microsoft" class="spons")    
+    
